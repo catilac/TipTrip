@@ -30,9 +30,13 @@ class ViewController: UIViewController {
 
         tipControl.selectedSegmentIndex = TTUtils.getDefaultTip()
         
+//        billField.becomeFirstResponder()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
         billField.becomeFirstResponder()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

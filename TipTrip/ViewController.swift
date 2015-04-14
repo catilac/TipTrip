@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var containerView: UIView!
     
     let tipPercentages = [0.18, 0.2, 0.25]
     
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
         var formatter = NSNumberFormatter()
         formatter.numberStyle = .CurrencyStyle
         
+
         tipLabel.text = formatter.stringFromNumber(0)
         totalLabel.text = formatter.stringFromNumber(0)
 
@@ -37,8 +39,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onEditingChanged(sender: AnyObject) {
-        let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         let billAmount = (billField.text as NSString).doubleValue
+        
+        if containerView.alpha <= 0 {
+            UIView.animateWithDuration(0.7, animations: { () -> Void in
+                self.containerView.alpha = 1.0
+            })
+        }
+        
+        let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         let tip = billAmount * tipPercentage
         let total : NSNumber = billAmount + tip
         
@@ -51,6 +60,6 @@ class ViewController: UIViewController {
 
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
-    }
+    }    
 }
 

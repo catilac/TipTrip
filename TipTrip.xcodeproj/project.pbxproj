@@ -13,6 +13,8 @@
 		7A4F854E1AD220E80011872A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A4F854D1AD220E80011872A /* Images.xcassets */; };
 		7A4F85511AD220E80011872A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A4F854F1AD220E80011872A /* LaunchScreen.xib */; };
 		7A4F855D1AD220E90011872A /* TipTripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4F855C1AD220E90011872A /* TipTripTests.swift */; };
+		A896244A1ADC798F003FE188 /* TTUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89624491ADC798F003FE188 /* TTUtils.swift */; };
+		A8EF83241ADBE093002DCD06 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF83231ADBE093002DCD06 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		7A4F85561AD220E90011872A /* TipTripTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipTripTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4F855B1AD220E90011872A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A4F855C1AD220E90011872A /* TipTripTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTripTests.swift; sourceTree = "<group>"; };
+		A89624491ADC798F003FE188 /* TTUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTUtils.swift; sourceTree = "<group>"; };
+		A8EF83231ADBE093002DCD06 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +81,10 @@
 		7A4F85431AD220E80011872A /* TipTrip */ = {
 			isa = PBXGroup;
 			children = (
+				A89624491ADC798F003FE188 /* TTUtils.swift */,
 				7A4F85461AD220E80011872A /* AppDelegate.swift */,
 				7A4F85481AD220E80011872A /* ViewController.swift */,
+				A8EF83231ADBE093002DCD06 /* SettingsViewController.swift */,
 				7A4F854A1AD220E80011872A /* Main.storyboard */,
 				7A4F854D1AD220E80011872A /* Images.xcassets */,
 				7A4F854F1AD220E80011872A /* LaunchScreen.xib */,
@@ -213,7 +219,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A4F85491AD220E80011872A /* ViewController.swift in Sources */,
+				A896244A1ADC798F003FE188 /* TTUtils.swift in Sources */,
 				7A4F85471AD220E80011872A /* AppDelegate.swift in Sources */,
+				A8EF83241ADBE093002DCD06 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +413,7 @@
 				7A4F85621AD220E90011872A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A4F85631AD220E90011872A /* Build configuration list for PBXNativeTarget "TipTripTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				7A4F85651AD220E90011872A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

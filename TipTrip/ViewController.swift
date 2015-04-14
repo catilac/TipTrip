@@ -20,9 +20,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        tipLabel.text = "$0.00"
-        totalLabel.text = "$0.00"
+        var formatter = NSNumberFormatter()
+        formatter.numberStyle = .CurrencyStyle
+        
+        tipLabel.text = formatter.stringFromNumber(0)
+        totalLabel.text = formatter.stringFromNumber(0)
+
         tipControl.selectedSegmentIndex = TTUtils.getDefaultTip()
+        
+        billField.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,10 +40,13 @@ class ViewController: UIViewController {
         let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         let billAmount = (billField.text as NSString).doubleValue
         let tip = billAmount * tipPercentage
-        let total = billAmount + tip
+        let total : NSNumber = billAmount + tip
         
-        tipLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format:"$%.2f", total)
+        var formatter = NSNumberFormatter()
+        formatter.numberStyle = .CurrencyStyle
+        
+        tipLabel.text = formatter.stringFromNumber(tip)
+        totalLabel.text = formatter.stringFromNumber(total)
     }
 
     @IBAction func onTap(sender: AnyObject) {

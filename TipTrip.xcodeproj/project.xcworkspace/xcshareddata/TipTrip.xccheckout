@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>15241638-49D4-4C73-B243-5B0CFC48A3AC</string>
 	<key>IDESourceControlProjectName</key>
-	<string>TipTrip</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C3859D36A401D744710C5D6A6CAB5697F5CC0BA6</key>
 		<string>github.com:catilac/TipTrip.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TipTrip.xcodeproj</string>
+	<string>TipTrip.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C3859D36A401D744710C5D6A6CAB5697F5CC0BA6</key>

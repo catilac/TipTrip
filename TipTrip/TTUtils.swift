@@ -22,5 +22,4 @@ class TTUtils {
         defaults.setInteger(tip, forKey: kDefaultTipKey)
     }
     
-    
 }
